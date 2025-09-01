@@ -43,46 +43,94 @@
     font-style: italic;
 }
 
-h1{
-    font-family:'Mabry Mono Bold', sans-serif;
+h1 {
+    font-family: 'Mabry Mono Bold', sans-serif;
     font-size: 2rem;
     line-height: 1rem;
 }
 
-h2{
-    font-family:'Mabry Mono Medium', sans-serif;
+h2 {
+    font-family: 'Mabry Mono Medium', sans-serif;
     font-size: 1.5rem;
+    line-height: 4rem;
 }
 
-h3{
-    font-family:'Mabry Mono Bold Italic', sans-serif;
+h3 {
+    font-family: 'Mabry Mono Bold Italic', sans-serif;
     font-size: 1.6rem;
 }
 
 * {
     font-family: "Mabry Mono", sans-serif;
-    background-color:#fcfed2;
+    background-color: #fcfed2;
     list-style: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h1, h2, h3 {
-    color:#272620;
+h1,
+h2,
+h3 {
+    color: #272620;
     text-align: center;
 }
 
 p {
-text-wrap-style: pretty;
-text-align: center;
-line-height: 1.5rem;
+    text-wrap-style:balance;
+    text-align: center;
+    line-height: 1.5rem;
+    max-width: 600px;
 }
 
 a {
-    text-decoration:none;
-    font-size: 1.6rem;
+    text-decoration: none;
+    font-size: 1.2rem;
     color: #272620;
     line-height: 1.5rem;
+    font-family: Mabry Mono Medium;
 }
 
+.redondeo {
+    border-radius: 20px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.botonera a {
+    text-decoration: none;
+    color: #272620;
+    padding: 10px 20px;
+    border: 1px solid #272620;
+    border-radius: 30px;
+}
+
+.botonera a:hover {
+    color: #fcfed2;
+    background-color: #272620;
+}
+
+.botonera a:active {
+    background-color: #535353;
+    color: #fcfed2;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
