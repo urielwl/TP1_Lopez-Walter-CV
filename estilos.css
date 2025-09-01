@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/*fuentes-----------*/
+@font-face {
+    font-family: "Mabry Mono";
+    src: url(fonts/MabryMonoPro-Regular.ttf), format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mabry Mono Italic";
+    src: url(fonts/MabryMonoPro-Italic.ttf), format(truetype);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Mabry Mono Medium";
+    src: url(fonts/MabryMonoPro-Medium.ttf), format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mabry Mono Bold";
+    src: url(fonts/MabryMonoPro-Bold.ttf), format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mabry Mono Bold Italic";
+    src: url(fonts/MabryMonoPro-BoldItalic.ttf), format(truetype);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Mabry Mono Medium Italic";
+    src: url(fonts/MabryMonoPro-MediumItalic.ttf), format(truetype);
+    font-weight: medium;
+    font-style: italic;
+}
+
+h1{
+    font-family:'Mabry Mono Bold', sans-serif;
+    font-size: 2rem;
+    line-height: 1rem;
+}
+
+h2{
+    font-family:'Mabry Mono Medium', sans-serif;
+    font-size: 1.5rem;
+}
+
+h3{
+    font-family:'Mabry Mono Bold Italic', sans-serif;
+    font-size: 1.6rem;
+}
+
+* {
+    font-family: "Mabry Mono", sans-serif;
+    background-color:#fcfed2;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color:#272620;
+    text-align: center;
+}
+
+p {
+text-wrap-style: pretty;
+text-align: center;
+line-height: 1.5rem;
+}
+
+a {
+    text-decoration:none;
+    font-size: 1.6rem;
+    color: #272620;
+    line-height: 1.5rem;
+}
+
