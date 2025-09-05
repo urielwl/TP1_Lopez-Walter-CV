@@ -43,26 +43,9 @@
     font-style: italic;
 }
 
-h1 {
-    font-family: 'Mabry Mono Bold', sans-serif;
-    font-size: 2rem;
-    line-height: 1rem;
-}
-
-h2 {
-    font-family: 'Mabry Mono Medium', sans-serif;
-    font-size: 1.5rem;
-    line-height: 4rem;
-}
-
-h3 {
-    font-family: 'Mabry Mono Bold Italic', sans-serif;
-    font-size: 1.6rem;
-}
-
+/*general y body-----------*/
 * {
     font-family: "Mabry Mono", sans-serif;
-    background-color: #fcfed2;
     list-style: none;
     text-decoration: none;
     margin: 0;
@@ -70,6 +53,12 @@ h3 {
     box-sizing: border-box;
 }
 
+body {
+    background-color: #fcfed2;
+}
+
+
+/*titulos, parrafos e imagenes-----------*/
 h1,
 h2,
 h3 {
@@ -77,8 +66,27 @@ h3 {
     text-align: center;
 }
 
+h1 {
+    font-family: 'Mabry Mono Bold', sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+h2 {
+    font-family: 'Mabry Mono Medium', sans-serif;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+}
+
+h3 {
+    font-family: 'Mabry Mono Bold Italic', sans-serif;
+    font-size: 1.6rem;
+    line-height: 5rem;
+}
+
+
 p {
-    text-wrap-style:balance;
+    text-wrap-style: balance;
     text-align: center;
     line-height: 1.5rem;
     max-width: 600px;
@@ -90,18 +98,30 @@ a {
     color: #272620;
     line-height: 1.5rem;
     font-family: Mabry Mono Medium;
+    background-color: transparent;
 }
 
 .redondeo {
-    border-radius: 20px; 
+    border-radius: 20px;
 }
 
+/*header, nav y footer -----------*/
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 28px;
+    background-image: url(img/background.svg);
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.contenedor {
+    display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
+    justify-content: space-between;
+    width: 100vh;
+    max-width: 1200px;
+    background-color: transparent;
 }
 
 nav {
@@ -115,11 +135,12 @@ nav {
     padding: 10px 20px;
     border: 1px solid #272620;
     border-radius: 30px;
+    background-color: #fcfed2;
 }
 
 .botonera a:hover {
     color: #fcfed2;
-    background-color: #272620;
+    background-color: #009485ff;
 }
 
 .botonera a:active {
@@ -133,4 +154,89 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
+    padding-top: 50px;
+}
+
+
+/*divs y classes-----------*/
+#aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+#aboutme article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutme h1 {
+    padding-top: 40px;
+}
+
+#software {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+#software ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#trabajos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#trabajos h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#trabajos .identidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#trabajos .identidades img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.sociales {
+    padding-left: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.legal {
+    text-align: right;
+    align-items: center;
+    display: flex;
+    padding-left: 700px;
+}
+
+.caja {
+    text-decoration: none;
+    color: #272620;
+    padding: 10px 20px;
+    border: 1px solid #272620;
+    border-radius: 30px;
 }

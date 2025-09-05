@@ -3,28 +3,31 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>dg | urielwl</title>
+    <title>urielwl | dg</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
     <link href="img/favicon.svg" rel="icon" />
 </head>
 
 <body>
     <header>
-        <a href="index.html" title="Home">
-      <img src="img/logo.svg" height=40px alt="Logo de la página" class="logowl">
-        </a>
-        <nav class="botonera">
-            <a href="#">Inicio</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Experiencia</a>
-            <a href="#">Contacto</a>
-        </nav>
+        <div class="contenedor">
+            <a href="index.html" title="Home">
+                <img src="img/logo.svg" height=40px alt="Logo de la página">
+            </a>
+            <nav class="botonera">
+                <a href="#">Inicio</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Experiencia</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
+        <section id="aboutme">
             <article>
-                <img class="redondeo" src="img/profile.jpg" alt="Fotografía de Walter U. López">
+                <img src="img/profile.jpg" alt="Fotografía de Walter U. López" class="redondeo">
+
                 <h1>Walter Uriel López</h1>
                 <h2>Diseñador Gráfico</h2>
                 <p>Nací en Capital Federal pero desde siempre he vivido en Lanús Oeste, más precisamente en el barrio de
@@ -35,21 +38,63 @@
                     adquirido conocimientos en áreas como tipografía, diseño editorial, comunicación digital y
                     herramientas
                     visuales, que me permiten desarrollar propuestas gráficas efectivas y con identidad.</p>
+
+                <h3>¡No dudes en contactarme!</h3>
             </article>
-            <h3>¡No dudes en contactarme!</h3>
+        </section>
+
+        <section id="software">
+            <h2>Suelo trabajar con:</h2>
+            <ul>
+                <li>
+                    <img src="img/illustrator.svg" width="35px" alt="Adobe Illustrator" title="Illustrator">
+                </li>
+                <li>
+                    <img src="img/photoshop.svg" width="35px" alt="Adobe Photoshop" title="Photoshop">
+                </li>
+                <li>
+                    <img src="img/indesign.svg" width="35px" alt="Adobe InDesign" title="InDesign">
+                </li>
+                <li>
+                    <img src="img/acrobat.svg" width="35px" alt="Adobe Acrobat" title="Acrobat">
+                </li>
+                <li>
+                    <img src="img/visual-basic.svg" width="35px" alt="VS Code" title="Visual Code">
+                </li>
+                <li>
+                    <img src="img/github.svg" width="35px" alt="GitHub" title="GitHub">
+                </li>
+            </ul>
+        </section>
+
+        <section id="trabajos">
+            <h2>Parte de mis identidades...</h2>
+            <div class="identidades">
+                <img src="img/identi01.jpg" height="300px" alt="Identidad Pixel Bisonte" class="redondeo">
+                <img src="img/identi02.jpg" height="300px" alt="Campamento Navarro 2022" class="redondeo">
+                <img src="img/identi03.jpg" height="300px" alt="52° Aniversario Dorrego" class="redondeo">
+                <img src="img/identi04.jpg" height="300px" alt="Nudo: Museo de lo no dicho" class="redondeo">
+                <img src="img/identi05.jpg" height="300px" alt="Identidad de Krave" class="redondeo">
+                <img src="img/identi06.jpg" height="300px" alt="Identidad Rostro" class="redondeo">
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Cátedra Wischñevsky 2025</p>
-        <ul>
-            <li><a href="https://www.instagram.com/urielwl/" title="Ir a Instagram" target="_blank">
-                    <img src="img/instagram.svg" width="30" alt="Instagram"> </a></li>
-            <li><a href="https://www.youtube.com/@Bisonte__" title="Ir a YouTube" target="_blank">
-                    <img src="img/youtube.svg" width="30" alt="YouTube"></a></li>
-            <li><a href="https://www.facebook.com/urielwl" title="Ir a Facebook" target="_blank">
-                    <img src="img/facebook.svg" width="30" alt="Facebook"></a></li>
-        </ul>
+        <div class="sociales">
+            <a href="https://www.facebook.com/urielwl" title="Ir a Facebook" target="_blank">
+                <img src="img/facebook.svg" width="30" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/urielwl/" title="Ir a Instagram" target="_blank">
+                <img src="img/instagram.svg" width="30" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/@Bisonte__" title="Ir a YouTube" target="_blank">
+                <img src="img/youtube.svg" width="30" alt="YouTube">
+            </a>
+        </div>
+        <div class="legal">
+            TP1 / Cátedra Wischñevsky / 2025
+        </div>
     </footer>
 
 </body>
